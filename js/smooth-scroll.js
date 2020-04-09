@@ -23,4 +23,12 @@ $(document).ready(function(){
       });
     }  // End if
   });
+  $(window).resize(function(
+  ){
+    if($(window).width() < 766){
+        $(".navbar.navbar-expand-lg").addClass("fixed-top");
+    } else{
+      $(".navbar.navbar-expand-lg").removeClass("fixed-top");
+    }
+  });
 });
