@@ -1,0 +1,307 @@
+body{
+    font-family: 'Merienda';font-size: 15px;
+}
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.fp-tableCell{
+    vertical-align: initial;
+}
+.col-lg-4 img{
+    height: 100px;
+}
+nav{
+    background: white;
+    z-index: 500;
+    position: sticky;
+    display: flex;
+    /*height: 100px;*/
+}
+nav img{
+    height: 100px;
+}
+nav ul{
+    display: flex;
+}
+.cont{
+    height: 100%;
+    margin-top: 5px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+.only-mobile{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+.nav-item{
+    margin-left: .5rem;
+}
+.nav-link{
+    transition: all 0.3s ease 0s;
+    padding: .1rem .2em !important;
+    font-size: small;
+    border-width: .1rem;
+}
+.nav-link.active{
+	transition: .9s;
+	background-image: linear-gradient(to right, #000428, #004e92);
+	color: rgb(224, 224, 224)!important;
+}
+li a {
+    color: rgb(79, 93, 133);
+}
+li a:hover{
+    color: #4f5d85;
+}
+.navUl{    
+    margin-top: .4rem;
+    margin-bottom: 2px;
+}
+.navList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.card{
+    padding:  0px 0px 0px 0px;
+}
+.section .slide{
+    background-position: center;
+    background-size: cover;
+}
+.section .slide:nth-child(3){
+    background-image: url("../images/construction.png");
+}
+.section .slide:nth-child(5){
+    background-image: url("../images/environment.jpg");
+}
+.servicesDivs{
+    display: flex;
+    justify-content: center;
+}
+.infoUsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+  .middle{
+    width: 100%;
+    text-align: center;
+  }
+  .middle .btn{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #4f5d85;
+    overflow: hidden;
+    position: relative;
+  }
+  .middle a{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  .middle .btn i{
+    line-height: 30px;
+    font-size: 22px;
+    transition: 0.2s linear;
+  }
+.middle .btn:hover i{
+    transform: scale(1.1);
+    color: #f1f1f1;
+}
+.middle .btn::before{
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background: #4f5d85;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.middle .btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+.client-slider{
+ width: 60%;
+ height: 60%;
+ background-image: url(../images/client1.jpg);
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ margin: 3rem auto;
+ animation: slider-animation 16s infinite;
+}
+.clientsTitle{
+    text-align: center;
+    margin-top: 1rem;
+}
+  @keyframes slider-animation {
+    25%{background-image: url(../images/client2.jpg);}
+    50%{background-image: url(../images/client3.jpg);}    
+    75%{background-image: url(../images/client4.jpg);}
+    100%{background-image: url(../images/client5.jpg);}        
+  }
+
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+  
+@media screen and (min-width: 960px){
+    .row{
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+    .importanServices{
+        margin-top: 30px;
+    }
+    nav{
+        padding-left: 50px;
+    padding-right: 50px;
+    }
+}
+@media screen and (max-width : 768px){
+    .infoUs{
+        color: white;
+    }
+    #imgSafety{
+        padding-left: 0px;
+    padding-right: 0px;
+    }
+    nav{
+        display: block;
+    }
+    nav img{
+        width: 100%;
+    }
+    .infoUs h3{
+        font-size: 1.25rem;
+    }
+    .infoUs p{
+        font-size: smaller;
+    }
+    .infoUs{
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .infoUs .col-sm-12{
+        background-image: url(../images/syh.jpg);
+    }    
+    .servicesDivs{
+        margin-top: 10px;               
+    }
+    .importanServices img{
+        height: 50px;
+    }
+    .form-row{
+        height: 250px;
+        
+    }
+    .form-group{
+        height: 15%;
+        margin-bottom: 0px;
+    }
+    .titleForm{
+        margin-bottom: 0px;
+        height: 4px;
+    }
+    label{
+        margin-bottom: 0px;
+        font-size: smaller;
+    }
+    input {
+        height: 25px;
+    }
+    .only-mobile{
+        display: block;
+    }
+    .not-mobile{
+        display: none;
+    }
+    iframe{
+        height: 150px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .navList{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .navUl{
+        width: 100%;
+        padding-left: 0px;
+        justify-content: space-evenly;
+    }
+    .navUl li a{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: x-small;
+    }
+    #collapseExample{
+        width: 100%;
+    }
+    .rowServices{
+        margin-top: 15px;
+    }
+    .socialBlock{
+        width: 100%;
+    }
+    .middle{
+    display: flex;
+    justify-content: space-evenly
+    }
+    .middle .btn{
+    width: 25px;
+    height: 25px;
+
+    }
+    .middle .btn i{
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .middle a{
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    }
+    .client-slider{
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+    }
+}
+
+
+@media screen and (min-width : 768px) and (max-width : 1110px){
+    
+    .infoUs h3{
+        font-size: 1.25rem;
+    }
+    .infoUs p{
+        font-size: smaller;
+    }
+}
