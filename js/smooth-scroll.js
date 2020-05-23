@@ -1,26 +1,58 @@
 $(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
+  const sectionsPage = new fullpage('#fullpage', {
+    autoScrolling: true,
+    scrollingSpeed: 500,
+    fitToSection: false,
+    fitToSectionDelay: 300,
+    easing:'easeInOutCubic',
+    css3: true,
+    easingcss3: 'ease-out',
+    loopBottom: false,
+    //navigation: true,
+    
+    showActiveTooltip: true,
+    scrollHorizontally: true,
+    controlArrows:false,
+    //slidesNavigation:true,
+    dragAndMove:true,
+  });
+  $("#usButton").addClass("selected");
 
-  // Add smooth scrolling on all links inside the navbar
-  $("#navbarText a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+  $("#myMenu li").click(function(event) {
+    const value = event.target.id;
+    $("#myMenu li a").removeClass("selected");
+    $("#"+ value).addClass("selected");
+    if (value == "servicesButton"){
+      $('.collapse').show();
+      $("#subMenu li a").removeClass("selected");
+      $("#constructionButton").addClass("selected");
+    } else {
+      $('.collapse').hide()
+    }
+  });
+  $("#subMenu li").click(function(event) {
+    const value = event.target.id;
+    $("#subMenu li a").removeClass("selected");
+    $("#"+ value).addClass("selected");
+  });
 
-      // Store hash
-      var hash = this.hash;
+  $("#bsasForm").submit(function(e){
+    nameValue = $("#inputName").val().replace(/ /g, "")
+    emailValue = $("#inputEmail").val().replace(/ /g, "")
+    celValue = $("#inputCel").val().replace(/ /g, "")
+    commentValue = $("#inputComment").val().replace(/ /g, "")
+    if (nameValue == "" || emailValue == ""|| celValue == "" || commentValue == "" ) {
+      $("#textALert").html("Completá todos los campos")
+      e.preventDefault();
+    }
+  });
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }  // End if
+  $(window).resize(function(
+  ){
+    if($(window).width() < 766){
+        $(".navbar.navbar-expand-lg").addClass("fixed-top");
+    } else{
+      $(".navbar.navbar-expand-lg").removeClass("fixed-top");
+    }
   });
 });

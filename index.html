@@ -1,311 +1,307 @@
-<html>
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
-	<title>BsAs Safety</title>
-	<link rel="icon" href="images/safety.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>BsAs Safety</title>
+    <link rel="icon" href="images/safety.png">
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1452908124881270');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1452908124881270&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<div class="row">
-		<!---Start navigation Bar -->
-		<div class="d-none d-sm-none d-md-block col-lg-12 first">
-			<a class="navbar-brand safety" href="#Welcome">
-				<img src="images/safety.png" width="50" height="50" class="d-inline-block" alt="">
-			</a>
-		</div>
-		<div class="col-12 d-md-none only-mobile">
-			<a class="navbar-brand safety" href="#Welcome">
-				<img src="images/safety.png" width="50" height="50" class="d-inline-block" alt="">
-			</a>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-light" id="navModify">
-			<div class="d-none" id="imgSafety">
-				<img src="images/safety.png" class="d-inline-block" alt="">
-			</div>
-			<div class="buttonMenu cols-6">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-					aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse bg-light" id="navbarText">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#Us">Nosotros</a>
-					</li>
+<body>
+    <nav>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3" id="imgSafety">
+            <img src="images/safety.png" class="not-mobile" alt="">
+            <img src="images/safetyHeader.JPG" class="only-mobile" alt="">
+        </div>
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 navList">
+            <div class="socialBlock">
+                <div class="middle">
+                    <a class="btn" href="https://www.facebook.com/BsAsSafety/">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn" href="https://twitter.com/BsAs_Safety">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn" href="#">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a class="btn" href="https://instagram.com/bsas.safety">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn" href="https://www.linkedin.com/in/buenos-aires-safety-64808a1a4/">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn" href="https://wa.me/5491121652635">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </div>
+            </div>
+            <ul class="navUl" id="myMenu">
+                <li class="nav-item">
+                    <a class="nav-link" id="usButton" href="#pageUS">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="servicesButton" href="#pageUS/constructionSlide">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="learnningButton" href="#pageUS/lessonsSlide">Capacitaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="clientsButton" href="#pageUS/clientSlide">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contactButton" href="#pageContact">Contacto</a>
+                </li>
+            </ul>
+            <div class="collapse">
+                <div class="card card-body">
+                    <ul class="navUl" id="subMenu">
+                        <li class="nav-item">
+                            <a class="nav-link" id="constructionButton" href="#pageUS/constructionSlide">Construcción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="industryButton" href="#pageUS/industrySlide">Industria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="enviromentButton" href="#pageUS/environmetSlide">Medio Ambiente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="buildingButton" href="#pageUS/buildingSlide">Edificio Seguro</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link" id="measuringButton" href="#pageUS/measuringSlide">Mediciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="fullpage">
+        <div class="section" data-anchor="pageUS">
+            <div class="slide">
+                <div class="row infoUs col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-sm-12 col-md-6 infoUsText">
+                        <h3 lick="myScript()">Nosotros</h3>
+                        <p>
+                            Somos un equipo que brinda servicio integral de Seguridad, Higiene y Medio Ambiente,
+                            teniendo
+                            en
+                            cuenta una relacion costo-beneficio, para poder adaptarnos de la mejor manera a las
+                            necesidades
+                            de cada cliente.
+                            Sabiendo que es una normativa legal, nuestro principal objetivo es cooperar con las
+                            empresas
+                            a
+                            cumplimentar las exigencias
+                            de Seguridad, Higiene y Medio Ambiente a nivel municipal, provincial y nacional.
+                            Nuestra consultora está en condiciones de asumir el compromiso de asesorarlo en la
+                            gestión
+                            de
+                            riesgos e incorporación de mejoras laborales y del Medio
+                            Ambiente, asi es como crecemos junto a nuestros clientes brindando apoyo en todas las
+                            ramas
+                            de
+                            nuestra Industria, Comercio y Estado</p>
+                    </div>
+                    <div class="d-none d-sm-none d-md-block col-md-6">
+                        <img class="img-fluid" src="images/syh.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div class="row col-12 col-sm-12 col-md-12 col-lg-12 rowServices">
+                        <h5>Nuestros servicios detacados</h5>
+                        <div class="row importanServices col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 servicesDivs">
+                                <a href="">
+                                    <img src="images/CivilDefense.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 servicesDivs">
+                                <a href="#pageUS/lessonsSlide">
+                                    <img src="images/lessons.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 servicesDivs">
+                                <a href="">
+                                    <img src="images/simulatios.jpeg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-					<li class="nav-item">
-						<a class="nav-link" href="#Services">Nuestros Servicios</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#Contact">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<div class="container">
-		<div class="row bg-light init" id="Us">
-			<div class="col-md-6">
-				<h3>Nosotros</h3>
-				<p>
-					Somos una Consultora de Empresas conformada por Profesionales Calificados donde nuestro
-					principal objetivo es brindar servicios con altos estándares de Calidad y Eficiencia. Bajo este
-					concepto le aseguramos a usted y a su empresa soluciones acordes a sus necesidades.
-					Los Servicios de Higiene y Seguridad son una exigencia legal y tienen como principal objetivo
-					crear en las Empresas actitudes responsables en materia de Seguridad e Higiene, en el marco de
-					su organización.
-					Asimismo en el ámbito Medio Ambiental para la adecuación de los requerimientos a nivel
-					municipal, provincial y nacional.
-					Por lo tanto nuestra Empresa está en condiciones de asumir el compromiso de asesorarlo en la
-					gestión de riesgos e incorporación de mejoras en las condiciones laborales y del medio ambiente,
-					contribuyendo también a optimizar la eficiencia de su Empresa incrementando la productividad y
-					manteniendo su imagen en el mercado.</p>
-			</div>
-			<div class="col-md-6" data-aos="fade-up">
-				<img class="img-fluid" src="images/syh.jpg">
-			</div>
-		</div>
-		<div class="row bg-light"><br></div>
-		<div class="row bg-light">
-			<div class="col-md-6 order-md-1 order-2" data-aos="fade-up">
-				<img class="img-fluid " src="images/exitsignal.jpg">
-			</div>
-			<div class="col-md-6 order-md-12 order-1">
-				<h3>Plan de evacuación / Sistema de Autoprotección - Ley 5920</h3>
-				<p>Nosotros nos encargaremos de presentar ante las autoridades de Defensa Civil la documentación
-					requerida para la aprobación del Plan de Evacuación. Una vez presentado se inicia un Número de
-					Registro (en Defensa Civil) el cual deberá actualizarse en forma anual, o cada vez que se
-					modifiquen las condiciones que requieran realizar las adecuaciones del Plan de Evacuación. Es
-					obligación legal mantener vigente el Registro, por el cual se deberá obtener el Certificado de
-					Evaluación Positiva Anual y realizar periódicamente los simulacros de evacuación exigidos por
-					ley.</p>
-			</div>
-		</div>
-		<div class="row" id="Services">
-			<div class="col navMenu">
-				<h2 class="text-center">Nuestros Servicios</h2>
-			</div>
-		</div>
-		<div class="row bg-light">
-			<div class="col-md-4" data-aos="slide-up">
-				<div class="card view zoom">
-					<img class="card-img-top img-fluid " src="images/fabrica.jpg">
-					<div class="card-body">
-						<h5 class="card-title">En la industria</h5>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Estudios de las condiciones de los sectores de trabajo</li>
-							<li class="list-group-item">Auditorias del cumplimiento legal en higiene y seguridad
-								laboral acorde al tipo de establecimiento</li>
-							<li class="list-group-item">Confección de estadísticas sobre indicadores de seguridad y
-								salud ocupacional</li>
-							<li class="list-group-item">Cumplimentar las exigencias de la superintendencia de riesgo
-								del trabajo, ART y otros organismos oficiales.</li>
-							<li class="list-group-item">Auditorias tecnicas</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4" data-aos="slide-up">
-				<div class="card">
-					<img class="card-img-top img-fluid " src="images/obra.jpeg">
-					<div class="card-body">
-						<h5 class="card-title">En la construcción</h5>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Auditoria del cumplimiento de la normativa vigente</li>
-							<li class="list-group-item">Confección, presentación y actualizacion del programa de
-								seguridad y aviso ante la ART</li>
-							<li class="list-group-item">Elaboración/ejecución del programa de capacitación de
-								riesgos generales/especificios de trabajos seguros</li>
-							<li class="list-group-item">Representación de la empresa ante organismo oficiales</li>
-							<li class="list-group-item">Visitas a obras y confección del legajo técnico, de acuerdo
-								a la exigencia del comitente y/o contratista principal</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4" data-aos="slide-up">
-				<div class="card">
-					<img class="card-img-top img-fluid" src="images/ambiente.jpg">
-					<div class="card-body">
-						<h5 class="card-title">Medio Ambiente</h5>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Auditorias ambientales</li>
-							<li class="list-group-item">Gestión de residuos especiales/efluentes gaseosos y
-								efluentes líquidos</li>
-							<li class="list-group-item">Materiales peligrosos, tratamientos, procedimientos para su
-								manipulación, transporte, almacenaje y uso en proceso</li>
-							<li class="list-group-item">Evaluación de impacto ambiental</li>
-							<li class="list-group-item">Presentaciones antes los diferentes orgnaismos de control
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4" data-aos="slide-up">
-				<div class="card">
-					<img class="card-img-top img-fluid" src="images/capacitacion.jpg">
-					<div class="card-body">
-						<h5 class="card-title">Capacitaciones</h5>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Uso y conservación de los elementos de protección personal
-								(EPPs)</li>
-							<li class="list-group-item">Trabajos de espacion confinados</li>
-							<li class="list-group-item">Seguridad en el manejo de gases comprimidos</li>
-							<li class="list-group-item">Plan de evacuación ante emergencias</li>
-							<li class="list-group-item">Ergonomía aplicado al puesto de trabajo</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4" data-aos="slide-up">
-				<div class="card">
-					<img class="card-img-top img-fluid" src="images/evacuacion.jpeg">
-					<div class="card-body">
-						<h5 class="card-title">Plan de evacuación</h5>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Confección y presentación de requerimientos del Anexo IV de
-								la Disposición 1358</li>
-							<li class="list-group-item">Confección de planos de evacuación</li>
-							<li class="list-group-item">Maquetado y desarrollo de las simulaciones dinámicas de
-								incendio y evacuación de personas, en caso que sea necesaria</li>
-							<li class="list-group-item">Capacitación del personal</li>
-							<li class="list-group-item">Relevamiento y asesoramiento fotográfico de las
-								instalaciones</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4" data-aos="slide-up">
-				<div class="card">
-					<img class="card-img-top img-fluid" src="images/auditorias.jpg">
-					<div class="card-body">
-						<h5 class="card-title">Mediciones</h5>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Estudios de Carga de Fuego</li>
-							<li class="list-group-item">Estudios de iluminación</li>
-							<li class="list-group-item">Estudios de ruidos y vibraciones</li>
-							<li class="list-group-item">Protocolo de puesta a tierra</li>
-							<li class="list-group-item">Estudio de ventilación</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="row" id="Contact">
-			<div class="bg-light col-sm-12 col-md-6 jabwn" id="formJabwn">
-				<div class="col">
-					<form action="https://formsapi.jabwn.com/key/mM2e4mSFurnyYXxXYhQn" method="post">
-						<input type="hidden" name="_subject" value="Contacto Página" />
-						<input type="text" name="_honey" value="" style="display:none">
-						<input type="hidden" name="_replyto" value="%email">
-						<div class="form-row">
-							<div class="form-group col-8">
-								<h3>Contactanos!</h3>
-								<label for="inputName">Nombre y Apellido</label>
-								<input type="text" name="name" id="inputName" class="form-control a"
-									placeholder="Nombre" />
-							</div>
-							<div class="form-group col-8">
-								<label for="inputEmail"> Email</label>
-								<input type="email" name="email" id="inputEmail" class="form-control a"
-									placeholder="Email" />
-							</div>
-							<div class="form-group col-8">
-								<label for="inputCel">Telefono</label>
-								<input type="tel" class="form-control a" id="inputCel" name="phone"
-									placeholder="Telefono">
-							</div>
-							<div class="form-group col-8">
-								<label for="inputComment">Consulta</label>
-								<textarea name="message" class="form-control" rows="2" id="inputComment"
-									placeholder="Dejanos tu mensaje"></textarea>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-md-offset-4">
-								<input type="submit" value="Send" class="btn btn-secondary btn-block" />
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6">
-				<div class="col-sm-12 map">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0123386084833!2d-58.4822895847716!3d-34.55324298047257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6917e23f56f%3A0x28d01fad3ffa137c!2sRoque%20P%C3%A9rez%203780%2C%20C1430FBZ%20CABA!5e0!3m2!1ses-419!2sar!4v1568689155016!5m2!1ses-419!2sar"
-						width="500" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-				</div>
-				<div class="col-md-12">
-					<div>
-						<h5>Dirección</h5>
-						<p>Roque Perez 3780, Saavedra, CABA </p>
-					</div>
-					<div>
-						<h5>Teléfono</h5>
-						<p>(011)2165-2635 </p>
-					</div>
-					<div>
-						<h5>Email</h5>
-						<p>bsas.safety@gmail.com</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<footer>
-			<!-- <div class= "row only-mobile"> -->
-			<div class="row foot">
-				<div class="col-7">
-					<a class="btn btn-primary btn-block text-center" href="tel:1121652635"><i class="fa fa-phone"
-							aria-hidden="true"></i> Llamar</a>
-				</div>
-				<div class="col-7">
-					<a class="btn btn-success btn-block text-center" href="https://wa.me/5491121652635"><i
-							class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</a>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script type="text/javascript" src="js/smooth-scroll.js"></script>
-	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-	<script type="text/javascript" src="js/image-effect.js"></script>
-	<script>
-		$(function () {
-			$(window).scroll(function () {
-				if ($(this).width() > 700) {
-					$('#formJabwn').addClass('jabwn')
-					if ($(this).scrollTop() > 110) {
-						$('#navModify').css('height', '15%');
-						$('#imgSafety').removeClass('d-none');
-					} else {
-						$('#navModify').css('height', '8%');
-						$('#imgSafety').addClass('d-none');
-					}
-				} else {
-					$('#formJabwn').removeClass('jabwn')
-				}
-			});
-		});
-	</script>
+                </div>
+            </div>
+            <div class="slide" data-anchor="constructionSlide">
+                <div class="infoText">
+                    <h3>Construcción</h3>
+                    <p class="subtitle">Ofrecemos confección y presentación ante ART de</p>
+                    <p>-Programa de Seguridad según el tipo de RES. SRT 51/97, 35/98, 319/99.</p>
+                    <p>-Aviso de obra</p>
+                    <p>-Capacitaiones para la prevención en obra semanal, quincenal y/o mensual</p>
+                    <p>-Auditorias en cumplimiento según normativa vigente</p>
+                    <p>Confección de legajos técnicos según exigencia del contratista principal o del comitente</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="industrySlide">
+                <div class="infoText">
+                    <h3>Industrias</h3>
+                    <p class="subtitle">Brindamos asesoramiento según requerimientos legales establecidos por el 
+                        DEC. 351/79 reglamentario de la Ley 19587/72, DEC. 1338/96 y modificaciones
+                        por la Ley 24557/95 de Riego de Trabajo.</p>
+                    <p>-Auditorias de cumplimiento legal en Seguridad e Higiene Laboral acorde al tipo de establecimiento.</p>
+                    <p>-Confección de estadisticas sobre indicadores de Seguridad y Salud Ocupacional</p>
+                    <p>-Cumplimentar las exigencias de la Superintendencia de Riego de Trabajo, ART y otros organismos oficiales</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="environmetSlide">
+                <div class="infoText">
+                    <h3>Medio Ambiente</h3>
+                    <p class="subtitle">Ofrecemos un serivico integral de Medio Ambiente externo, que incluye visitas mensuales y las gestiones 
+                        antes OPDS de declaraciones juradas de Residuos Especiales y Efluentes Gaseosos. 
+                        (No incluye tasas a abonar en los organismos correspondientes).</p>
+                    <p>-Asesoramiento Ambiental Externo (visitas de 60 min)</p>
+                    <p>-Evaluación ambiental</p>
+                    <p>-Realización y presentación de DDJJ</p>
+                    <p>-Registro de manifiestos y certificados</p>
+                    <p>-Gestión del certificado de Aptitud Ambiental</p>
+                    <p>-Control de hojas de seguridad</p>
+                    <p>-Asesoramiento externo en ISO 14001:2015.</p>
+                    <p>-Asistencia y soporte ante entes gubernamentales</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="buildingSlide">
+                <div class="infoText">
+                    <h3>Edificio seguro</h3>
+                    <p>La certificación de Edificio seguro surge de la Disposición 1541/DGDYPC/14.</p>
+                    <p>Derogación de Disposición 411/DGDYPC/2011, 3314/DGDYPC/2011 y 1875/DGDYPC/2011.</p>
+                    <p class="subtitle">Disposición oblitaoria para inmuenbles afectados al Regimen de Propiedad Horizontal (Ley 13512)</p>
+                    <p>-Asesoramiento para la prevención y subsanado de los posibles peligros.</p>
+                    <p>-Luego de la verificación del cumplimiento de la normativa vigente a la que se encuentran sometidos los
+                        edificios sujetos al Régimen de Propiedad Horizontal, el Certificado de Edificio Seguro será suscripto por un
+                        Profesional habilitado (Lic. en Seguridad e Higiene o Técnico ante el Ministerio de Trabajo).
+                    </p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="measuringSlide">
+                <div class="infoTextmediciones">
+                    <h3>Mediciones</h3>        
+                </div>
+            </div>
+            <div class="slide" data-anchor="lessonsSlide">
+                <div class="infoText">
+                    <h3>Capacitaciones</h3>
+                    <p class="subtitle">Contamos con profesionales que nos brindan diversas capacitaciones para los 
+                        diferentes ámbitos de trabajo</p>
+                    <p>-Uso y conversación de los elementos de protección personal (EPP)</p>
+                    <p>-Trabajos en espacios confinados</p>
+                    <p>-Seguridad en el manejo de gases comprimidos</p>
+                    <p>-Plan de evacuacín ante emergencias</p>
+                    <p>-Ergonomía según el puesto de trabajo</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="clientSlide">
+                <h3 class="clientsTitle">Clientes que confian en nosotros</h3>
+                <div class="client-slider">                    
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="pageContact">
+            <div class="container containerForm">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 jabwn" id="formJabwn">
+                        <div class="col">
+                            <form id="bsasForm" action="https://formsapi.jabwn.com/key/VOD5iffVjghGJCgcQiKZ" method="post">
+                                <input type="hidden" name="_subject" value="Contacto Página" />
+                                <input type="text" name="_honey" value="" style="display:none">
+                                <input type="hidden" name="_replyto" value="%email">
+                                <div class="formContent">
+                                    <h5 class="only-mobile">Contactanos!</h5>
+                                    <h3 class="not-mobile">Contactanos!</h3>
+                                    <div class="">
+                                        <label for="inputName">Nombre y Apellido</label>
+                                        <input type="text" name="name" id="inputName" class=""
+                                            placeholder="Nombre" />
+                                    </div>
+                                    <div class="">
+                                        <label for="inputEmail"> Email</label>
+                                        <input type="email" name="email" id="inputEmail" class=""
+                                            placeholder="Email" />
+                                    </div>
+                                    <div class="">
+                                        <label for="inputCel">Telefono</label>
+                                        <input type="tel" class="" id="inputCel" name="phone"
+                                            placeholder="Telefono">
+                                    </div>
+                                    <div class="">
+                                        <label for="inputComment">Consulta</label>
+                                        <textarea name="message" class="" rows="2" id="inputComment"
+                                            placeholder="Dejanos tu mensaje"></textarea>
+                                    </div>
+                                    <p id="textALert"></p>
+                                    <div class="col-md-4 col-md-offset-4 submitButton">
+                                        <input type="submit" value="Send" class="btn btn-secondary btn-block" />
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="divMap">
+                            <div class="col-sm-12 map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0123386084833!2d-58.4822895847716!3d-34.55324298047257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6917e23f56f%3A0x28d01fad3ffa137c!2sRoque%20P%C3%A9rez%203780%2C%20C1430FBZ%20CABA!5e0!3m2!1ses-419!2sar!4v1568689155016!5m2!1ses-419!2sar"
+                                    width="500" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p>Roque Perez 3780, Saavedra, CABA </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js/bootstrap.min.js"></script>
+    <!--fullpage-->
+    <script src="js/fullpage.extensions.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <!--fontAwesone-->
+    <script src="https://kit.fontawesome.com/3962cc9804.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+
 </body>
 
 </html>
