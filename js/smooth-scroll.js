@@ -20,8 +20,7 @@ $(document).ready(function(){
     dragAndMove:true,
   });
   $( "#servicesButton" ).click(function() {
-	
-    $('#collapseExample').toggle();
+    $('.collapse').toggle();
   });
 
   $(window).resize(function(

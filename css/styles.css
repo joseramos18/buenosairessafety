@@ -68,15 +68,50 @@ li a:hover{
 .card{
     padding:  0px 0px 0px 0px;
 }
-.section .slide{
-    background-position: center;
-    background-size: cover;
+.section .slide {
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+    background-position-y: -11%;
+    font-weight: bolder;
 }
 .section .slide:nth-child(3){
     background-image: url("../images/construction.png");
 }
+.section .slide:nth-child(4){
+    background-image: url("../images/industry.png");
+}
 .section .slide:nth-child(5){
-    background-image: url("../images/environment.jpg");
+    background-image: url("../images/enviroment.png");
+}
+.section .slide:nth-child(6){
+    background-image: url("../images/buildings.png");
+}
+/*.section .slide:nth-child(7){
+    background-image: url("../images/measurements.jpg");
+}*/
+.section .slide:nth-child(8){
+    background-image: url("../images/lessonSlide.png");
+}
+.infoText {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+}
+.infoText p {
+    margin-bottom: 1px;
+}
+.infoText .subtitle {
+    margin-bottom: 1rem
+}
+
+.infoText h3 {
+    font-weight: unset;
+    font-size: xx-large;
 }
 .servicesDivs{
     display: flex;
@@ -146,6 +181,32 @@ li a:hover{
     text-align: center;
     margin-top: 1rem;
 }
+.formContainer {
+    height: 100%;
+}
+.formContainer .row {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+.jabwn .col {
+    height: 32rem;
+}
+form {
+    height: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    align-items: center;
+}
+.formContent {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
   @keyframes slider-animation {
     25%{background-image: url(../images/client2.jpg);}
     50%{background-image: url(../images/client3.jpg);}    
@@ -215,18 +276,6 @@ li a:hover{
     .importanServices img{
         height: 50px;
     }
-    .form-row{
-        height: 250px;
-        
-    }
-    .form-group{
-        height: 15%;
-        margin-bottom: 0px;
-    }
-    .titleForm{
-        margin-bottom: 0px;
-        height: 4px;
-    }
     label{
         margin-bottom: 0px;
         font-size: smaller;
@@ -260,7 +309,7 @@ li a:hover{
         padding-right: 0px;
         font-size: x-small;
     }
-    #collapseExample{
+    .colapse{
         width: 100%;
     }
     .rowServices{
@@ -293,6 +342,25 @@ li a:hover{
         height: 100%;
         background-size: 100% auto;
     }
+    .section .slide {
+        background-size:auto;
+        background-position-y: auto;
+    }
+    .section .slide:nth-child(5){
+        background-position: top;
+    }
+    .infoText {
+        justify-content: inherit;
+        font-size: small;
+        width: 70%;
+    }
+    .section .slide:nth-child(8){
+        background-position-y: 30%;
+        background-position-x: 60%;
+    }
+    /*.myMenu{
+        margin-top: 14px;
+    }*/
 }
 
 
