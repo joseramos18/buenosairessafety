@@ -1,8 +1,5 @@
 $(document).ready(function(){
   const sectionsPage = new fullpage('#fullpage', {
-    /*anchors: ['aaaa','bbbb'],
-    menu: '#myMenu',
-    navigationTooltips: ['aaaa','bbbb'],*/
     autoScrolling: true,
     scrollingSpeed: 500,
     fitToSection: false,
@@ -11,17 +8,43 @@ $(document).ready(function(){
     css3: true,
     easingcss3: 'ease-out',
     loopBottom: false,
-    navigation: true,
+    //navigation: true,
     
     showActiveTooltip: true,
     scrollHorizontally: true,
     controlArrows:false,
-    slidesNavigation:true,
+    //slidesNavigation:true,
     dragAndMove:true,
   });
-  $( "#servicesButton" ).click(function() {
-	
-    $('#collapseExample').toggle();
+  $("#usButton").addClass("selected");
+
+  $("#myMenu li").click(function(event) {
+    const value = event.target.id;
+    $("#myMenu li a").removeClass("selected");
+    $("#"+ value).addClass("selected");
+    if (value == "servicesButton"){
+      $('.collapse').show();
+      $("#subMenu li a").removeClass("selected");
+      $("#constructionButton").addClass("selected");
+    } else {
+      $('.collapse').hide()
+    }
+  });
+  $("#subMenu li").click(function(event) {
+    const value = event.target.id;
+    $("#subMenu li a").removeClass("selected");
+    $("#"+ value).addClass("selected");
+  });
+
+  $("#bsasForm").submit(function(e){
+    nameValue = $("#inputName").val().replace(/ /g, "")
+    emailValue = $("#inputEmail").val().replace(/ /g, "")
+    celValue = $("#inputCel").val().replace(/ /g, "")
+    commentValue = $("#inputComment").val().replace(/ /g, "")
+    if (nameValue == "" || emailValue == ""|| celValue == "" || commentValue == "" ) {
+      $("#textALert").html("Completá todos los campos")
+      e.preventDefault();
+    }
   });
 
   $(window).resize(function(

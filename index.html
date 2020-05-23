@@ -11,6 +11,23 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>BsAs Safety</title>
     <link rel="icon" href="images/safety.png">
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1452908124881270');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1452908124881270&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -22,68 +39,60 @@
         <div class="col-12 col-sm-12 col-md-9 col-lg-9 navList">
             <div class="socialBlock">
                 <div class="middle">
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://www.facebook.com/BsAsSafety/">
                       <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://twitter.com/BsAs_Safety">
                       <i class="fab fa-twitter"></i>
                     </a>
                     <a class="btn" href="#">
                       <i class="fab fa-google"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://instagram.com/bsas.safety">
                       <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://www.linkedin.com/in/buenos-aires-safety-64808a1a4/">
                       <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://wa.me/5491121652635">
                       <i class="fab fa-whatsapp"></i>
                     </a>
                   </div>
             </div>
             <ul class="navUl" id="myMenu">
                 <li class="nav-item">
-                    <a class="nav-link" href="#pageUS">Nosotros</a>
+                    <a class="nav-link" id="usButton" href="#pageUS">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="servicesButton" href="#pageUS/servicesSlide">
-                        Servicios
-                    </a>
+                    <a class="nav-link" id="servicesButton" href="#pageUS/constructionSlide">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#pageUS/clientSlide">Capacitaciones</a>
+                    <a class="nav-link" id="learnningButton" href="#pageUS/lessonsSlide">Capacitaciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#pageUS/clientSlide">Clientes</a>
-                </li>
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="">Noticias</a>
+                    <a class="nav-link" id="clientsButton" href="#pageUS/clientSlide">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Fotos</a>
-                </li>-->                
-                <li class="nav-item">
-                    <a class="nav-link" href="#pageContact">Contacto</a>
+                    <a class="nav-link" id="contactButton" href="#pageContact">Contacto</a>
                 </li>
             </ul>
-            <div class="collapse" id="collapseExample">
+            <div class="collapse">
                 <div class="card card-body">
-                    <ul class="navUl">
+                    <ul class="navUl" id="subMenu">
                         <li class="nav-item">
-                            <a class="nav-link" href="#pageUS/constructionSlide">Construcción</a>
+                            <a class="nav-link" id="constructionButton" href="#pageUS/constructionSlide">Construcción</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Industria</a>
+                            <a class="nav-link" id="industryButton" href="#pageUS/industrySlide">Industria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pageUS/environmetSlide">Medio Ambiente</a>
+                            <a class="nav-link" id="enviromentButton" href="#pageUS/environmetSlide">Medio Ambiente</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Edificio Seguro</a>
+                            <a class="nav-link" id="buildingButton" href="#pageUS/buildingSlide">Edificio Seguro</a>
                         </li>  
                         <li class="nav-item">
-                            <a class="nav-link" href="">Mediciones</a>
+                            <a class="nav-link" id="measuringButton" href="#pageUS/measuringSlide">Mediciones</a>
                         </li>
                     </ul>
                 </div>
@@ -95,9 +104,9 @@
             <div class="slide">
                 <div class="row infoUs col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="col-sm-12 col-md-6 infoUsText">
-                        <h3>Nosotros</h3>
+                        <h3 lick="myScript()">Nosotros</h3>
                         <p>
-                            Somos un equipo que brinda servicio integral de Seguridad, Higien y Medio Ambiente,
+                            Somos un equipo que brinda servicio integral de Seguridad, Higiene y Medio Ambiente,
                             teniendo
                             en
                             cuenta una relacion costo-beneficio, para poder adaptarnos de la mejor manera a las
@@ -131,7 +140,7 @@
                                 </a>
                             </div>
                             <div class="col-6 col-sm-6 col-md-4 col-lg-4 servicesDivs">
-                                <a href="">
+                                <a href="#pageUS/lessonsSlide">
                                     <img src="images/lessons.png" alt="">
                                 </a>
                             </div>
@@ -145,31 +154,74 @@
 
                 </div>
             </div>
-            <div class="slide" data-anchor="servicesSlide">
-                <p>hol</p>
-            </div>
             <div class="slide" data-anchor="constructionSlide">
-                <h3>Construcción</h3>
-                <p>Ofrecemos una confección y presentación ante ART de</p>
-                <p>-Programa de Seguridad según el tipo de RES. SRT 51/97, 35/98, 319/99.</p>
-                <p>-Aviso de obra</p>
-                <p>-Capacitaiones para la prevención en obra semanal, quincenal y/o mensual</p>
-                <p>-Auditorias en cumplimiento según normativa vigente</p>
-                <p>Confección de legajos técnicos según exigencia del contratista principal o del comitente</p>
+                <div class="infoText">
+                    <h3>Construcción</h3>
+                    <p class="subtitle">Ofrecemos confección y presentación ante ART de</p>
+                    <p>-Programa de Seguridad según el tipo de RES. SRT 51/97, 35/98, 319/99.</p>
+                    <p>-Aviso de obra</p>
+                    <p>-Capacitaiones para la prevención en obra semanal, quincenal y/o mensual</p>
+                    <p>-Auditorias en cumplimiento según normativa vigente</p>
+                    <p>Confección de legajos técnicos según exigencia del contratista principal o del comitente</p>
+                </div>
             </div>
             <div class="slide" data-anchor="industrySlide">
-                <h3>Industras</h3>
+                <div class="infoText">
+                    <h3>Industrias</h3>
+                    <p class="subtitle">Brindamos asesoramiento según requerimientos legales establecidos por el 
+                        DEC. 351/79 reglamentario de la Ley 19587/72, DEC. 1338/96 y modificaciones
+                        por la Ley 24557/95 de Riego de Trabajo.</p>
+                    <p>-Auditorias de cumplimiento legal en Seguridad e Higiene Laboral acorde al tipo de establecimiento.</p>
+                    <p>-Confección de estadisticas sobre indicadores de Seguridad y Salud Ocupacional</p>
+                    <p>-Cumplimentar las exigencias de la Superintendencia de Riego de Trabajo, ART y otros organismos oficiales</p>
+                </div>
             </div>
             <div class="slide" data-anchor="environmetSlide">
-                <h3>Medio Ambiente</h3>
+                <div class="infoText">
+                    <h3>Medio Ambiente</h3>
+                    <p class="subtitle">Ofrecemos un serivico integral de Medio Ambiente externo, que incluye visitas mensuales y las gestiones 
+                        antes OPDS de declaraciones juradas de Residuos Especiales y Efluentes Gaseosos. 
+                        (No incluye tasas a abonar en los organismos correspondientes).</p>
+                    <p>-Asesoramiento Ambiental Externo (visitas de 60 min)</p>
+                    <p>-Evaluación ambiental</p>
+                    <p>-Realización y presentación de DDJJ</p>
+                    <p>-Registro de manifiestos y certificados</p>
+                    <p>-Gestión del certificado de Aptitud Ambiental</p>
+                    <p>-Control de hojas de seguridad</p>
+                    <p>-Asesoramiento externo en ISO 14001:2015.</p>
+                    <p>-Asistencia y soporte ante entes gubernamentales</p>
+                </div>
             </div>
             <div class="slide" data-anchor="buildingSlide">
-                <h3>Edificio Seguro</h3>
+                <div class="infoText">
+                    <h3>Edificio seguro</h3>
+                    <p>La certificación de Edificio seguro surge de la Disposición 1541/DGDYPC/14.</p>
+                    <p>Derogación de Disposición 411/DGDYPC/2011, 3314/DGDYPC/2011 y 1875/DGDYPC/2011.</p>
+                    <p class="subtitle">Disposición oblitaoria para inmuenbles afectados al Regimen de Propiedad Horizontal (Ley 13512)</p>
+                    <p>-Asesoramiento para la prevención y subsanado de los posibles peligros.</p>
+                    <p>-Luego de la verificación del cumplimiento de la normativa vigente a la que se encuentran sometidos los
+                        edificios sujetos al Régimen de Propiedad Horizontal, el Certificado de Edificio Seguro será suscripto por un
+                        Profesional habilitado (Lic. en Seguridad e Higiene o Técnico ante el Ministerio de Trabajo).
+                    </p>
+                </div>
             </div>
             <div class="slide" data-anchor="measuringSlide">
-                <h3>Edificio Seguro</h3>
+                <div class="infoTextmediciones">
+                    <h3>Mediciones</h3>        
+                </div>
             </div>
-
+            <div class="slide" data-anchor="lessonsSlide">
+                <div class="infoText">
+                    <h3>Capacitaciones</h3>
+                    <p class="subtitle">Contamos con profesionales que nos brindan diversas capacitaciones para los 
+                        diferentes ámbitos de trabajo</p>
+                    <p>-Uso y conversación de los elementos de protección personal (EPP)</p>
+                    <p>-Trabajos en espacios confinados</p>
+                    <p>-Seguridad en el manejo de gases comprimidos</p>
+                    <p>-Plan de evacuacín ante emergencias</p>
+                    <p>-Ergonomía según el puesto de trabajo</p>
+                </div>
+            </div>
             <div class="slide" data-anchor="clientSlide">
                 <h3 class="clientsTitle">Clientes que confian en nosotros</h3>
                 <div class="client-slider">                    
@@ -177,65 +229,58 @@
             </div>
         </div>
         <div class="section" data-anchor="pageContact">
-            <div class="container">
+            <div class="container containerForm">
                 <div class="row">
-                    <div class="bg-light col-sm-12 col-md-6 jabwn" id="formJabwn">
+                    <div class="col-sm-12 col-md-6 jabwn" id="formJabwn">
                         <div class="col">
-                            <form action="https://formsapi.jabwn.com/key/mM2e4mSFurnyYXxXYhQn" method="post">
+                            <form id="bsasForm" action="https://formsapi.jabwn.com/key/VOD5iffVjghGJCgcQiKZ" method="post">
                                 <input type="hidden" name="_subject" value="Contacto Página" />
                                 <input type="text" name="_honey" value="" style="display:none">
                                 <input type="hidden" name="_replyto" value="%email">
-                                <div class="form-row">
-
-                                    <h5 class="only-mobile titleForm">Contactanos!</h5>
-                                    <div class="form-group col-8">
-                                        <h3 class="not-mobile">Contactanos!</h3>
+                                <div class="formContent">
+                                    <h5 class="only-mobile">Contactanos!</h5>
+                                    <h3 class="not-mobile">Contactanos!</h3>
+                                    <div class="">
                                         <label for="inputName">Nombre y Apellido</label>
-                                        <input type="text" name="name" id="inputName" class="form-control a"
+                                        <input type="text" name="name" id="inputName" class=""
                                             placeholder="Nombre" />
                                     </div>
-                                    <div class="form-group col-8">
+                                    <div class="">
                                         <label for="inputEmail"> Email</label>
-                                        <input type="email" name="email" id="inputEmail" class="form-control a"
+                                        <input type="email" name="email" id="inputEmail" class=""
                                             placeholder="Email" />
                                     </div>
-                                    <div class="form-group col-8">
+                                    <div class="">
                                         <label for="inputCel">Telefono</label>
-                                        <input type="tel" class="form-control a" id="inputCel" name="phone"
+                                        <input type="tel" class="" id="inputCel" name="phone"
                                             placeholder="Telefono">
                                     </div>
-                                    <div class="form-group col-8">
+                                    <div class="">
                                         <label for="inputComment">Consulta</label>
-                                        <textarea name="message" class="form-control" rows="2" id="inputComment"
+                                        <textarea name="message" class="" rows="2" id="inputComment"
                                             placeholder="Dejanos tu mensaje"></textarea>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-4">
+                                    <p id="textALert"></p>
+                                    <div class="col-md-4 col-md-offset-4 submitButton">
                                         <input type="submit" value="Send" class="btn btn-secondary btn-block" />
                                     </div>
+                                    
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <div class="col-sm-12 map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0123386084833!2d-58.4822895847716!3d-34.55324298047257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6917e23f56f%3A0x28d01fad3ffa137c!2sRoque%20P%C3%A9rez%203780%2C%20C1430FBZ%20CABA!5e0!3m2!1ses-419!2sar!4v1568689155016!5m2!1ses-419!2sar"
-                                width="500" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                        <div class="col-md-12">
-                            <div>
-                                <p>Roque Perez 3780, Saavedra, CABA </p>
+                        <div class="divMap">
+                            <div class="col-sm-12 map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0123386084833!2d-58.4822895847716!3d-34.55324298047257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6917e23f56f%3A0x28d01fad3ffa137c!2sRoque%20P%C3%A9rez%203780%2C%20C1430FBZ%20CABA!5e0!3m2!1ses-419!2sar!4v1568689155016!5m2!1ses-419!2sar"
+                                    width="500" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                             </div>
-                            <!--<div>
-                                <h5>Teléfono</h5>
-                                <p>(011)2165-2635 </p>
+                            <div class="col-md-12">
+                                <div>
+                                    <p>Roque Perez 3780, Saavedra, CABA </p>
+                                </div>
                             </div>
-                            <div>
-                                <h5>Email</h5>
-                                <p>bsas.safety@gmail.com</p>
-                            </div>-->
                         </div>
                     </div>
                 </div>
