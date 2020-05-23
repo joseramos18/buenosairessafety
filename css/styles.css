@@ -74,22 +74,19 @@ li a:hover{
     background-position-y: -11%;
     font-weight: bolder;
 }
-.section .slide:nth-child(3){
+.section .slide:nth-child(2){
     background-image: url("../images/construction.png");
 }
-.section .slide:nth-child(4){
+.section .slide:nth-child(3){
     background-image: url("../images/industry.png");
 }
-.section .slide:nth-child(5){
+.section .slide:nth-child(4){
     background-image: url("../images/enviroment.png");
 }
-.section .slide:nth-child(6){
+.section .slide:nth-child(5){
     background-image: url("../images/buildings.png");
 }
-/*.section .slide:nth-child(7){
-    background-image: url("../images/measurements.jpg");
-}*/
-.section .slide:nth-child(8){
+.section .slide:nth-child(7){
     background-image: url("../images/lessonSlide.png");
 }
 .infoText {
@@ -206,6 +203,12 @@ form {
     justify-content: space-between;
     align-items: end;
 }
+.selected {
+    border-bottom:solid;
+}
+#textALert {
+    color: red;
+}
 
   @keyframes slider-animation {
     25%{background-image: url(../images/client2.jpg);}
@@ -280,8 +283,20 @@ form {
         margin-bottom: 0px;
         font-size: smaller;
     }
+    .jabwn .col {
+        height: auto;
+    }
     input {
-        height: 25px;
+        height: 20px;
+        font-size: smaller;
+    }
+    .submitButton{
+        height: 30px;
+    }
+    .btn{
+        height: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
     }
     .only-mobile{
         display: block;
@@ -354,13 +369,16 @@ form {
         font-size: small;
         width: 70%;
     }
-    .section .slide:nth-child(8){
+    .section .slide:nth-child(7){
         background-position-y: 30%;
         background-position-x: 60%;
     }
-    /*.myMenu{
+    .myMenu{
         margin-top: 14px;
-    }*/
+    }
+    iframe{
+        width: 100%;
+    }
 }
 
 

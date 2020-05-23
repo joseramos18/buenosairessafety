@@ -42,59 +42,57 @@
                     <a class="btn" href="https://www.facebook.com/BsAsSafety/">
                       <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://twitter.com/BsAs_Safety">
                       <i class="fab fa-twitter"></i>
                     </a>
                     <a class="btn" href="#">
                       <i class="fab fa-google"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://instagram.com/bsas.safety">
                       <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://www.linkedin.com/in/buenos-aires-safety-64808a1a4/">
                       <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a class="btn" href="#">
+                    <a class="btn" href="https://wa.me/5491121652635">
                       <i class="fab fa-whatsapp"></i>
                     </a>
                   </div>
             </div>
             <ul class="navUl" id="myMenu">
                 <li class="nav-item">
-                    <a class="nav-link" href="#pageUS">Nosotros</a>
+                    <a class="nav-link" id="usButton" href="#pageUS">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="servicesButton" href="#pageUS/servicesSlide">
-                        Servicios
-                    </a>
+                    <a class="nav-link" id="servicesButton" href="#pageUS/constructionSlide">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#pageUS/lessonsSlide">Capacitaciones</a>
+                    <a class="nav-link" id="learnningButton" href="#pageUS/lessonsSlide">Capacitaciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#pageUS/clientSlide">Clientes</a>
+                    <a class="nav-link" id="clientsButton" href="#pageUS/clientSlide">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#pageContact">Contacto</a>
+                    <a class="nav-link" id="contactButton" href="#pageContact">Contacto</a>
                 </li>
             </ul>
             <div class="collapse">
                 <div class="card card-body">
-                    <ul class="navUl">
+                    <ul class="navUl" id="subMenu">
                         <li class="nav-item">
-                            <a class="nav-link" href="#pageUS/constructionSlide">Construcción</a>
+                            <a class="nav-link" id="constructionButton" href="#pageUS/constructionSlide">Construcción</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pageUS/industrySlide">Industria</a>
+                            <a class="nav-link" id="industryButton" href="#pageUS/industrySlide">Industria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pageUS/environmetSlide">Medio Ambiente</a>
+                            <a class="nav-link" id="enviromentButton" href="#pageUS/environmetSlide">Medio Ambiente</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pageUS/buildingSlide">Edificio Seguro</a>
+                            <a class="nav-link" id="buildingButton" href="#pageUS/buildingSlide">Edificio Seguro</a>
                         </li>  
                         <li class="nav-item">
-                            <a class="nav-link" href="#pageUS/measuringSlide">Mediciones</a>
+                            <a class="nav-link" id="measuringButton" href="#pageUS/measuringSlide">Mediciones</a>
                         </li>
                     </ul>
                 </div>
@@ -106,7 +104,7 @@
             <div class="slide">
                 <div class="row infoUs col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="col-sm-12 col-md-6 infoUsText">
-                        <h3>Nosotros</h3>
+                        <h3 lick="myScript()">Nosotros</h3>
                         <p>
                             Somos un equipo que brinda servicio integral de Seguridad, Higiene y Medio Ambiente,
                             teniendo
@@ -155,9 +153,6 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="slide" data-anchor="servicesSlide">
-                <p>hol</p>
             </div>
             <div class="slide" data-anchor="constructionSlide">
                 <div class="infoText">
@@ -238,7 +233,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 jabwn" id="formJabwn">
                         <div class="col">
-                            <form action="https://formsapi.jabwn.com/key/mM2e4mSFurnyYXxXYhQn" method="post">
+                            <form id="bsasForm" action="https://formsapi.jabwn.com/key/mM2e4mSFurnyYXxXYhQn" method="post">
                                 <input type="hidden" name="_subject" value="Contacto Página" />
                                 <input type="text" name="_honey" value="" style="display:none">
                                 <input type="hidden" name="_replyto" value="%email">
@@ -265,9 +260,11 @@
                                         <textarea name="message" class="" rows="2" id="inputComment"
                                             placeholder="Dejanos tu mensaje"></textarea>
                                     </div>
-                                    <div class="col-md-4 col-md-offset-4">
+                                    <p id="textALert"></p>
+                                    <div class="col-md-4 col-md-offset-4 submitButton">
                                         <input type="submit" value="Send" class="btn btn-secondary btn-block" />
                                     </div>
+                                    
                                 </div>
                             </form>
                         </div>
@@ -283,14 +280,6 @@
                                 <div>
                                     <p>Roque Perez 3780, Saavedra, CABA </p>
                                 </div>
-                                <!--<div>
-                                    <h5>Teléfono</h5>
-                                    <p>(011)2165-2635 </p>
-                                </div>
-                                <div>
-                                    <h5>Email</h5>
-                                    <p>bsas.safety@gmail.com</p>
-                                </div>-->
                             </div>
                         </div>
                     </div>
