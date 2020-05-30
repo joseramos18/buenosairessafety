@@ -18,7 +18,7 @@ $(document).ready(function(){
   var initialHash = window.location.hash
   
   setActiveClass(initialHash)
-
+  
   $(window).on('hashchange',function(){ 
     var page = window.location.hash;
     setActiveClass(page)
