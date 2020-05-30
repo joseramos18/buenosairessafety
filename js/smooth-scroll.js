@@ -58,6 +58,7 @@ $(document).ready(function(){
       $('.collapse').hide()
     }
     $("#myMenu li a").removeClass("selected");
+    $("#subMenu li a").removeClass("selected");
     $("li a").each(function(i){
       hash = this.hash
       if (currentHash == hash ){
@@ -68,7 +69,6 @@ $(document).ready(function(){
       hash = this.hash
       if (currentHash == hash ) {
         $('.collapse').show()
-        $("#subMenu li a").removeClass("selected");
         $("#servicesButton").addClass("selected")
       }
     })
