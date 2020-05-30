@@ -16,7 +16,32 @@ $(document).ready(function(){
     //slidesNavigation:true,
     dragAndMove:true,
   });
-  $("#usButton").addClass("selected");
+    var initialHash = window.location.hash
+  setActiveClass(initialHash)
+  function setActiveClass(currentHash){
+    if(currentHash == "#pageContact"){
+      $('.collapse').hide()
+    }
+    $("#myMenu li a").removeClass("selected");
+    $("li a").each(function(i){
+      hash = this.hash
+      if (currentHash == hash ){
+        $(this).addClass("selected");
+      }
+    })
+    $("#subMenu li a").each(function(i){
+      hash = this.hash
+      if (currentHash == hash ) {
+        $('.collapse').show()
+        $("#servicesButton").addClass("selected")
+      }
+    })
+
+  }
+  $(window).on('hashchange',function(){ 
+    var page = window.location.hash;
+    setActiveClass(page)
+  });
 
   $("#myMenu li").click(function(event) {
     const value = event.target.id;
