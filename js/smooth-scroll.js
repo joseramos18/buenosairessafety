@@ -8,15 +8,21 @@ $(document).ready(function(){
     css3: true,
     easingcss3: 'ease-out',
     loopBottom: false,
-    //navigation: true,
     
     showActiveTooltip: true,
     scrollHorizontally: true,
     controlArrows:false,
-    //slidesNavigation:true,
     dragAndMove:true,
   });
-  $("#usButton").addClass("selected");
+
+  var initialHash = window.location.hash
+  
+  setActiveClass(initialHash)
+
+  $(window).on('hashchange',function(){ 
+    var page = window.location.hash;
+    setActiveClass(page)
+  });
 
   $("#myMenu li").click(function(event) {
     const value = event.target.id;
@@ -46,6 +52,28 @@ $(document).ready(function(){
       e.preventDefault();
     }
   });
+
+  function setActiveClass(currentHash){
+    if(currentHash == "#pageContact"){
+      $('.collapse').hide()
+    }
+    $("#myMenu li a").removeClass("selected");
+    $("li a").each(function(i){
+      hash = this.hash
+      if (currentHash == hash ){
+        $(this).addClass("selected");
+      }
+    })
+    $("#subMenu li a").each(function(i){
+      hash = this.hash
+      if (currentHash == hash ) {
+        $('.collapse').show()
+        $("#subMenu li a").removeClass("selected");
+        $("#servicesButton").addClass("selected")
+      }
+    })
+
+  }
 
   $(window).resize(function(
   ){
