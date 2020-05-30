@@ -16,30 +16,14 @@ $(document).ready(function(){
   });
 
   var initialHash = window.location.hash
-  
+  if (initialHash == "") {
+    initialHash = "#pageUS"
+  }
   setActiveClass(initialHash)
   
   $(window).on('hashchange',function(){ 
     var page = window.location.hash;
     setActiveClass(page)
-  });
-
-  $("#myMenu li").click(function(event) {
-    const value = event.target.id;
-    $("#myMenu li a").removeClass("selected");
-    $("#"+ value).addClass("selected");
-    if (value == "servicesButton"){
-      $('.collapse').show();
-      $("#subMenu li a").removeClass("selected");
-      $("#constructionButton").addClass("selected");
-    } else {
-      $('.collapse').hide()
-    }
-  });
-  $("#subMenu li").click(function(event) {
-    const value = event.target.id;
-    $("#subMenu li a").removeClass("selected");
-    $("#"+ value).addClass("selected");
   });
 
   $("#bsasForm").submit(function(e){
@@ -66,10 +50,12 @@ $(document).ready(function(){
       }
     })
     $("#subMenu li a").each(function(i){
-      hash = this.hash
-      if (currentHash == hash ) {
+      if($(this).hasClass("selected")){
         $('.collapse').show()
         $("#servicesButton").addClass("selected")
+      }
+      else if (!$("#servicesButton").hasClass("selected")){
+        $('.collapse').hide()
       }
     })
 
