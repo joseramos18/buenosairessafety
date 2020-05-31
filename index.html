@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fullpage.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <title>Consultora en Seguridad e Higiene Buenos Aires Safety</title>
     <meta name="description" content="Consultora en seguridad e higiene ambiental especializada en la ley 5920 de buenos aires, Argentina">
     <link rel="icon" href="images/safety.png">
@@ -104,7 +105,7 @@
             <div class="slide">
                 <div class="row infoUs col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="col-sm-12 col-md-6 infoUsText">
-                        <h3 lick="myScript()">Nosotros</h3>
+                        <h3>Nosotros</h3>
                         <p>
                             Somos un equipo que brinda servicio integral de Seguridad, Higiene y Medio Ambiente,
                             teniendo
@@ -135,7 +136,7 @@
                         <h5>Nuestros servicios destacados</h5>
                         <div class="row importanServices col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="col-6 col-sm-6 col-md-4 col-lg-4 servicesDivs">
-                                <a href="">
+                                <a href="#pageUS/autoprotectionSlide">
                                     <img src="images/CivilDefense.jpg" alt="Ley 5920 de Buenos Aires para defensa civil">
                                 </a>
                             </div>
@@ -206,9 +207,55 @@
                 </div>
             </div>
             <div class="slide" data-anchor="measuringSlide">
-                <div class="infoTextmediciones">
+                <div class="sliderMeausring">
                     <h3>Mediciones</h3>        
                 </div>
+                <nav id="sliderNav">
+                    <ul class="navUl" id="myMenu">
+                        <li class="nav-item">
+                            <a class="nav-link" >Puesta a tierra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Iluminación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Ergonomica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Ventilación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Carga de fuego</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="my-slider">
+                    <div class="slide-item">
+                        <div class="slideDiv"> 
+                            <img src="images/puestaTierra.png" alt="" class="img-slider">
+                        </div>
+                     </div>
+                     <div class="slide-item">
+                        <div class="slideDiv"> 
+                            <img src="images/iluminacion.png" alt="" class="img-slider">
+                        </div>
+                     </div>
+                     <div class="slide-item">
+                        <div class="slideDiv"> 
+                            <img src="images/ergonomia.png" alt="" class="img-slider">
+                        </div>
+                     </div>
+                     <div class="slide-item">
+                        <div class="slideDiv"> 
+                            <img src="images/ventilacion.png" alt="" class="img-slider">
+                        </div>
+                     </div>
+                     <div class="slide-item">
+                        <div class="slideDiv"> 
+                            <img src="images/cargadefuego.png" alt="" class="img-slider">
+                        </div>
+                     </div>
+                  </div>
             </div>
             <div class="slide" data-anchor="lessonsSlide">
                 <div class="infoText">
@@ -220,6 +267,25 @@
                     <p>-Seguridad en el manejo de gases comprimidos</p>
                     <p>-Plan de evacuacín ante emergencias</p>
                     <p>-Ergonomía según el puesto de trabajo</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="autoprotectionSlide">
+                <div class="infoText">
+                    <h3>Plan de evacuación</h3>
+                    <p>-Consta de designación de roles a personas, pautas
+                        y tiempos de aproximados de evacuación
+                    </p>
+                    <p class="subtitle">-Acciones y medios de adopción para controlar, evitar
+                        y prevenir riesgos sobre las personas y los bienes.
+                    </p>
+                    <h3>Sistema de autoprotección</h3>
+                    <p>-Realizamos descripción del tipo de actividad que se realiza
+                        y de los medios técnicos de protección.
+                    </p>
+                    <p>-Simulacro de evacuación
+                    </p>
+                    <p>-Capacitación para el uso correcto de extintores
+                    </p>
                 </div>
             </div>
             <div class="slide" data-anchor="clientSlide">
@@ -301,9 +367,9 @@
     <script src="js/fullpage.js"></script>
     <!--fontAwesone-->
     <script src="https://kit.fontawesome.com/3962cc9804.js" crossorigin="anonymous"></script>
-
+    <!--carrousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
-
 </body>
 
 </html>

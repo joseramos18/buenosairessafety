@@ -61,6 +61,24 @@ $(document).ready(function(){
 
   }
 
+  var slider = tns({
+    container: '.my-slider',
+    items: 2,
+    slideBy: 'page',
+    gutter: 10,
+    autoplay: false,
+    items: 2,
+    center: true,
+    speed: 400,
+    nav: false,
+    controls: false,
+    controlsContainer: true
+  });
+  $('#sliderNav ul li').click(function(){
+       slider.goTo($(this).index())
+  });
+  
+
   $(window).resize(function(
   ){
     if($(window).width() < 766){
@@ -69,4 +87,6 @@ $(document).ready(function(){
       $(".navbar.navbar-expand-lg").removeClass("fixed-top");
     }
   });
+
+  
 });
