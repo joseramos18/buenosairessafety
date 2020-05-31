@@ -89,6 +89,9 @@ li a:hover{
 .section .slide:nth-child(7){
     background-image: url("../images/lessonSlide.png");
 }
+.section .slide:nth-child(8){
+    background-image: url("../images/ley5920.png");
+}
 .infoText {
     margin-top: 2rem;
     margin-left: 2rem;
@@ -208,6 +211,21 @@ form {
 }
 #textALert {
     color: red;
+}
+.slideDiv{
+    display: flex;
+    justify-content: center;
+}
+.img-slider{
+    width: 70%;
+    height: 21rem;
+}
+.sliderNav{
+    margin-bottom: 5px;
+    color: rgb(79, 93, 133);
+}
+.sliderMeausring{
+    margin-top: 1rem;
 }
 
   @keyframes slider-animation {
@@ -373,11 +391,27 @@ form {
         background-position-y: 30%;
         background-position-x: 60%;
     }
-    .myMenu{
-        margin-top: 14px;
+    .section .slide:nth-child(8){
+        background-position-y: 60%;
+    background-position-x: center;
+    }
+    .section .slide:nth-child(8){
+        background-position-y: 70%;
+        background-position-x: 50%;
+    }
+    #myMenu{
+        margin-top: 1.3rem;
     }
     iframe{
         width: 100%;
+    }
+    .img-slider {
+        width: 100%;
+        height: 10rem;
+    }
+    #sliderNav {
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
 }
 
